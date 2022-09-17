@@ -33,38 +33,37 @@ function generatePassword(){
 
  if(conLower === true) {
   
-   passList.push(lowerCase);
+   passList.concat(lowerCase);
 
  }
  if(conUpper === true) {
   
-  passList.push(upperCase);
+  passList.concat(upperCase);
 
 }
-if(conSymbol === true) {
+ if(conSymbol === true) {
   
-  passList.push(symBols);
+  passList.concat(symBols);
 
 }
-if(conNum === true) {
+ if(conNum === true) {
   
-  passList.push(numBers);
+  passList.concat(numBers);
 
 }
 
-if(conLower === false && conUpper === false && conSymbol === false && conNum === false){
+ if(conLower === false && conUpper === false && conSymbol === false && conNum === false){
 
   window.alert("Please choose at least one character type!");
 }
 
-for(var i = 0; i < passList.length; i++){
+console.log(passList);
 
  
 
- 
 }
 
-}
+
 
 
 
