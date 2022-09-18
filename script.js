@@ -23,7 +23,7 @@ function generatePassword(){
  
  }
 
- if(passLength > 8 || passLength < 128){
+ if(passLength > 8 && passLength < 128){
 
   var conLower = window.confirm("Would you want Lowercase letters?");
   var conUpper = window.confirm("Would you want Upper letters?");
