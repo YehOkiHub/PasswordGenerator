@@ -61,10 +61,10 @@ function generatePassword(){
 }
 
 var password = ""
-// var passwordArray = [];
+
 for(var i = 0; i < passLength; i++){
 password += (passList[Math.floor(Math.random() * passList.length)]);
-// randomPass = passList[Math.floor(Math.random()*passList.length)];
+
 
 console.log(password);
 }
